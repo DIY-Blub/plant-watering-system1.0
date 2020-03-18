@@ -8,6 +8,6 @@ python:
   - "3.8"
 
 install:
-  - pip install RPi.GPIO spidev
+  - pip3 install RPi.GPIO spidev
  
 script: python3 boot.py
