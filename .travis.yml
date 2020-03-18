@@ -10,4 +10,4 @@ python:
 install:
   - pip3 install RPi.GPIO spidev
  
-script: python3 boot.py
+script: python boot.py
