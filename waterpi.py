@@ -17,6 +17,7 @@ class MCP3008:
 
     def open(self):
         self.spi.open(self.bus, self.device)
+        #self.spi.max_speed_hz = 1000000                 # nur bei Raspbian-Version "Buster" erforderlich!
 
     def read(self, channel = 0):
         adc = self.spi.xfer2([1,(8+channel)<<4,0])
